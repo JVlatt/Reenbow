@@ -87,6 +87,23 @@ img::-moz-selection {
   font-weight: 700;
 }
 
+.navbar-btn{
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  background: #ea3445;
+  color: #e6e6ea;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.navbar-btn:active, .navbar-btn:hover {
+  background-color: #b20f22;
+  color: #e6e6ea;
+  text-decoration: none;
+
+}
+
 .btn-xl {
   font-size: 18px;
   padding: 20px 40px;
@@ -108,7 +125,7 @@ img::-moz-selection {
 }
 
 #mainNav {
-  background-color: #212529;
+  background-color: #ea3445;
 }
 
 #mainNav .navbar-toggler {
@@ -118,19 +135,17 @@ img::-moz-selection {
   text-transform: uppercase;
   color: white;
   border: 0;
-  background-color: #fed136;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background-color: #ea3445;
+  font-family: "Lilita One",sans-serif;
+}
+@font-face { font-family: "Heroes Legend"; src: url('HeroesLegend.ttf'); }
+#mainNav .navbar-brand {
+  color: #ea3445;
+  font-family: "Heroes Legend",sans-serif;
 }
 
-#mainNav .navbar-brand {
-  color: #fed136;
-}
-#navLogo
-{
-  font-family: heroes_legend_hollowregular, Arial, sans-serif; !important;
-}
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #fec503;
+  color: #b20f22;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -143,7 +158,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #b20f22;
 }
 
 @media (min-width: 992px) {
@@ -164,27 +179,49 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: #ea3445;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
     padding: 12px 0;
+    color: #e6e6ea;
   }
+}
+.red-main{
+  font-family: "Lilita One",sans-serif;
+  font-size: 22px;
+  color: #ea3445;
+  text-align: left;
+  margin: 0 auto;
+  padding : 0 0;
+}
+.black-alt{
+  font-family: "Lilita One",sans-serif;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 0;
 }
 
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
+  background-color: #e6e6ea;
+}
+masthead.container{
+  width: 100%;
+  margin: 0 0;
+}
+header.masthead .intro-text {
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
+.intro-img{
+  width: 70%;
+  height: auto;
 }
 
 header.masthead .intro-text .intro-lead-in {
@@ -192,7 +229,7 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Lilita One",sans-serif;
 }
 
 header.masthead .intro-text .intro-heading {
@@ -200,13 +237,13 @@ header.masthead .intro-text .intro-heading {
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Lilita One",sans-serif;
 }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
+    padding-top: 120px;
+    padding-bottom: 10px;
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
@@ -328,7 +365,7 @@ header.masthead .intro-text .intro-heading {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
-  font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: "Lilita One",sans-serif;
 }
 
 .portfolio-modal .modal-content ul.list-inline {
