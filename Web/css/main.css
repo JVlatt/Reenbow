@@ -5,10 +5,13 @@ body {
 }
 /*--- navigation bar ---*/
 .navbar {
-    background:#ef476f;
+    background:transparent;
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
+}
+.bg-red.scrolled{
+    background: #ea3445 !important;
 }
 .nav-link,
 .navbar-brand {
