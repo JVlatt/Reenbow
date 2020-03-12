@@ -36,7 +36,7 @@ h6 {
 }
 
 .page-section {
-  padding: 100px 0;
+  padding-top: 140px;
 }
 
 .page-section h2.section-heading {
@@ -54,11 +54,6 @@ h6 {
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-@media (min-width: 768px) {
-  section {
-    padding: 150px 0;
-  }
-}
 
 ::-moz-selection {
   background: #fed136;
@@ -81,10 +76,20 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-
-.btn {
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+.btn{
+  font-family: "Lilita One",sans-serif;
   font-weight: 700;
+}
+.btn-order{
+  height: 40px;
+  font-weight: 700;
+  background-color: #ea3445!important;
+  color: #ffffff !important;
+  text-align: center;
+  align-self: center;
+  margin:10px auto;
+  font-family: "Lilita One",sans-serif;
+  padding: .375rem .75rem;
 }
 
 .navbar-btn{
@@ -110,18 +115,20 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #fed136;
-  border-color: #fed136;
+  background-color: #ffffff;
+  border-color: #ea3445;
+  border-radius: 30px;
+  color: #ea3445;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
+  background-color: #b20f22 !important;
+  border-color: #b20f22 !important;
   color: white;
 }
 
 .btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(178, 15, 34, 0.5) !important;
 }
 
 #mainNav {
@@ -139,8 +146,13 @@ img::-moz-selection {
   font-family: "Lilita One",sans-serif;
 }
 @font-face { font-family: "Heroes Legend"; src: url('HeroesLegend.ttf'); }
+
+@media (min-width: 992px) {
+  #mainNav .navbar-brand{
+    color: #ea3445;
+  }
+}
 #mainNav .navbar-brand {
-  color: #ea3445;
   font-family: "Heroes Legend",sans-serif;
 }
 
@@ -188,13 +200,140 @@ img::-moz-selection {
     color: #e6e6ea;
   }
 }
-.red-main{
+.text-landing{
   font-family: "Lilita One",sans-serif;
   font-size: 22px;
   color: #ea3445;
   text-align: left;
-  margin: 0 auto;
+  margin: 75px auto;
   padding : 0 0;
+  font-weight: normal;
+}
+.redtext{
+  color: #ea3445;
+  font-family: "Lilita One",sans-serif;
+}
+
+#explanation{
+  background: #e6e6ea;
+}
+@media (max-width: 768px)
+{
+  #foot-character{
+    display: none;
+  }
+}
+#foot-character{
+  top:100px;
+}
+
+#how{
+  background: url("../img/background/page04-05.png");
+}
+
+#partners{
+  background: url("../img/background/partners.png");
+}
+#order{
+  background: url("../img/background/Page07.jpg");
+  padding-bottom: 200px;
+}
+#footer-page{
+  background: url("../img/background/Page06.jpg");
+}
+.order-container{
+  margin: 200px 0;
+}
+.logo-store{
+  margin: 20px 10px;
+}
+.title{
+  font-family: "Lilita One",sans-serif; !important;
+  font-size: 30px;
+  margin: 40px auto;
+  font-weight: bold;
+}
+.footer-category-title{
+  font-family: "Lilita One",sans-serif; !important;
+  color: white;
+  font-size: 20px;
+  font-weight: normal;
+}
+.footer-category-text{
+  font-family: "Lilita One",sans-serif; !important;
+  color: white;
+  font-size: 10px;
+  font-weight: normal;
+}
+.footer-title{
+  font-family: "Lilita One",sans-serif; !important;
+  color: white;
+  font-size: 30px;
+  margin: 200px auto 50px auto;
+  font-weight: normal;
+}
+@media (min-width: 992px) {
+  .footer-title{
+    margin: 300px auto 100px auto;
+    font-size: 50px;
+  }
+  .footer-category-text{
+    font-size: 15px;
+  }
+  .footer-category-title{
+    font-size: 50px;
+  }
+  .footer-category-container{
+    margin-top: 200px;
+  }
+}
+.footer-category-container{
+  margin-top: 300px;
+}
+
+.photo{
+  border-radius: 50px;
+  width: auto;
+}
+.photo-row {
+  margin-top: 50px;
+}
+.gray-bg{
+  background-color: #e6e6ea;
+}
+
+.red{
+  background-color: #ea3445;
+}
+
+.panel{
+  border-radius: 60px;
+  margin: 50px auto;
+  padding: 50px 0;
+  background-color: #ea3445;
+  opacity: 90%;
+  -webkit-box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.4);
+  box-shadow: 9px 10px 27px 0px rgba(0,0,0,0.4);
+}
+
+.text-panel .title{
+  color: #ffffff; !important;
+}
+
+.text-panel .text{
+  font-weight: normal;
+  font-family: "Lilita One",sans-serif;
+  color: white;
+  font-size: 24px;
+  margin: 40px 20px 40px 0;
+}
+.product
+{
+  background-image: url("img/photos/product-pannel.png");
+  height: auto;
+  width: 100%;
+  z-index: 1;
 }
 .black-alt{
   font-family: "Lilita One",sans-serif;
@@ -204,14 +343,69 @@ img::-moz-selection {
   margin: 0 auto;
   padding: 0 0;
 }
+.brown{
+  color: #ad7f01;
+}
+/*Carousel*/
+
+.character-img{
+  height: auto;
+}
+.carousel-inner{
+  bottom:-100px;
+}
+.carousel.carousel-fade .carousel-item {
+  display: block;
+  opacity: 0;
+  transition: opacity ease-out .5s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+}
+#quote-carousel {
+  padding: 0 10px 30px 10px;
+  margin-top: 60px;
+}
+
+#quote-carousel .carousel-control {
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+
+.carousel-indicators{
+  list-style: none;
+  top: -100px;
+  margin: 50px 0;
+}
+.carousel-indicators li, .carousel-indicators li.active{
+  background-color: transparent;
+  position: relative;
+  margin: 10px;
+}
+.carousel-indicators img{
+  position: absolute;
+  width: 100%;
+  border-radius: 50%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
+
+
+/*Carousel*/
+
 
 header.masthead {
   text-align: center;
   color: white;
   background-color: #e6e6ea;
+  width: auto;
 }
 masthead.container{
-  width: 100%;
   margin: 0 0;
 }
 header.masthead .intro-text {
@@ -240,6 +434,24 @@ header.masthead .intro-text .intro-heading {
   font-family: "Lilita One",sans-serif;
 }
 
+@media (max-width: 768px){
+  .character-img{
+    display: none;
+  }
+  .logo-partners{
+    padding: 0 0;
+    height: auto;
+    width: 10px;
+    margin: 10px auto;
+  }
+  .logo-container{
+    justify-content: center;
+  }
+}
+
+.socials-container{
+  margin: 100px auto;
+}
 @media (min-width: 768px) {
   header.masthead .intro-text {
     padding-top: 120px;
@@ -266,12 +478,12 @@ header.masthead .intro-text .intro-heading {
   text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#explanation .explanation-item {
   right: 0;
   margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#explanation .explanation-item .explanation-link {
   position: relative;
   display: block;
   max-width: 400px;
@@ -279,40 +491,46 @@ header.masthead .intro-text .intro-heading {
   cursor: pointer;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#explanation .explanation-item .explanation-link .explanation-hover {
   position: absolute;
   width: 100%;
   height: 100%;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(234, 52, 69, 0.7);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#explanation .explanation-item .explanation-link .explanation-hover:hover {
   opacity: 1;
 }
-
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+.explanation-hover-content{
+  height: 100% !important;
+}
+.picto-hover{
+  width: 60%;
+  height: auto;
+}
+#explanation .explanation-item .explanation-link .explanation-hover .explanation-hover-content {
   font-size: 20px;
   position: absolute;
-  top: 50%;
   width: 100%;
-  height: 20px;
+  top: 5%;
+  height: auto;
   margin-top: -12px;
   text-align: center;
   color: white;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#explanation .explanation-item .explanation-link .explanation-hover .explanation-hover-content i {
   margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#explanation .explanation-item .explanation-link .explanation-hover .explanation-hover-content h3,
+#explanation .explanation-item .explanation-link .explanation-hover .explanation-hover-content h4 {
   margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#explanation .explanation-item .explanation-caption {
   max-width: 400px;
   margin: 0 auto;
   padding: 25px;
@@ -320,68 +538,68 @@ header.masthead .intro-text .intro-heading {
   background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#explanation .explanation-item .explanation-caption h4 {
   margin: 0;
   text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#explanation .explanation-item .explanation-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
   font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
-#portfolio * {
+#explanation * {
   z-index: 2;
 }
 
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  #explanation .explanation-item {
     margin: 0 0 30px;
   }
 }
 
-.portfolio-modal .modal-dialog {
+.explanation-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
 }
 
-.portfolio-modal .modal-content {
+.explanation-modal .modal-content {
   padding: 100px 0;
   text-align: center;
 }
 
-.portfolio-modal .modal-content h2 {
+.explanation-modal .modal-content h2 {
   font-size: 3em;
   margin-bottom: 15px;
 }
 
-.portfolio-modal .modal-content p {
+.explanation-modal .modal-content p {
   margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.explanation-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
   font-family: "Lilita One",sans-serif;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.explanation-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.explanation-modal .modal-content img {
   margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content button {
+.explanation-modal .modal-content button {
   cursor: pointer;
 }
 
-.portfolio-modal .close-modal {
+.explanation-modal .close-modal {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -391,11 +609,11 @@ header.masthead .intro-text .intro-heading {
   background-color: transparent;
 }
 
-.portfolio-modal .close-modal:hover {
+.explanation-modal .close-modal:hover {
   opacity: 0.3;
 }
 
-.portfolio-modal .close-modal .lr {
+.explanation-modal .close-modal .lr {
   /* Safari and Chrome */
   z-index: 1051;
   width: 1px;
@@ -406,7 +624,7 @@ header.masthead .intro-text .intro-heading {
   background-color: #212529;
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.explanation-modal .close-modal .lr .rl {
   /* Safari and Chrome */
   z-index: 1052;
   width: 1px;
